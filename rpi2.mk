@@ -15,7 +15,19 @@ PRODUCT_PACKAGES += \
     audio.primary.$(TARGET_PRODUCT) \
     Launcher3 \
     Settings \
-    Browser
+    Browser \
+    Calculator \
+    Calendar \
+    Email \
+    ExactCalculator \
+    HTMLViewer \
+    Gallery2 \
+    DeskClock \
+    Music \
+    MusicFX \
+    Terminal \
+    QuickSearchBox \
+    MediaProvider
 
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
