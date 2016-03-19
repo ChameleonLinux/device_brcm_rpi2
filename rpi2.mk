@@ -1,14 +1,10 @@
-USE_OEM_TV_APP := true
-$(call inherit-product, device/google/atv/products/atv_base.mk)
-
 PRODUCT_NAME := rpi2
 PRODUCT_DEVICE := rpi2
-PRODUCT_BRAND := AndroidTV
-PRODUCT_MODEL := AndroidTV on rpi2
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Android on rpi2
 PRODUCT_MANUFACTURER := brcm
 
-PRODUCT_AAPT_CONFIG := normal tvdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_AAPT_CONFIG := normal hdpi
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
@@ -17,8 +13,7 @@ PRODUCT_PACKAGES += \
     gralloc.$(TARGET_PRODUCT) \
     hwcomposer.$(TARGET_PRODUCT) \
     audio.primary.$(TARGET_PRODUCT) \
-    Launcher2 \
-    LeanbackLauncher \
+    Launcher3 \
     Settings \
     Browser
 
@@ -40,4 +35,4 @@ PRODUCT_COPY_FILES := \
 
 DEVICE_PACKAGE_OVERLAYS := device/brcm/rpi2/overlay
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
-PRODUCT_LOCALES := en_US,ko_KR,ja_JP,zh_CN
+PRODUCT_LOCALES := en_US,ko_KR,ja_JP,zh_CN,pl_PL,de_DE,zh_TW,nl_NL,nl_BE,cs_CZ,en_AU,en_GB,en_CA,en_NZ,en_SG,fr_BE,fr_CA,fr_FR,de_AT,de_LI,de_CH,it_IT,it_CH,ru_RU,es_ES,ar_EG,ar_IL,bg_BG,ca_ES,hr_HR,da_DK,en_IN,en_IE,en_ZA,fi_FI,el_GR,iw_IL,hi_IN,hu_HU,in_ID,lv_LV,lt_LT,nb_NO,pt_BR,pt_PT,ro_RO,sr_RS,sk_SK,sl_SI,es_US,sv_SE,tl_PH,th_TH,tr_TR,uk_UA,vi_VN
